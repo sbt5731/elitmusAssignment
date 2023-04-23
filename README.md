@@ -12,3 +12,5 @@ Level 2: Eye to detail: Users have to find the hidden words.
 Level 3: General Knowledge and General Thinking 
 ![Screenshot (189)](https://user-images.githubusercontent.com/109434937/233858893-25457b54-c8b2-4ca3-8659-2138cf4e7f4d.png)
 
+login using : admin123@gmail.com
+password : admin123
