@@ -1,0 +1,121 @@
+/* Set up some basic styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  form {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+    
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 20px);
+      font-size: 14px;
+    }
+  
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .note {
+      font-size: 12px;
+    }
+  }
+  

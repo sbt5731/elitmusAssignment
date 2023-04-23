@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="signin.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign In</h1>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit" id="signin">Sign In</button>
+      </form>
+      <p>Don't have an account? <a href="registration.html">Sign up</a></p>
+    </div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB6W-Z_EoDrwNCs5nYp0lseEqTOQeAD1H4",
+        authDomain: "treasure-158ad.firebaseapp.com",
+        databaseURL: "https://treasure-158ad-default-rtdb.firebaseio.com",
+        projectId: "treasure-158ad",
+        storageBucket: "treasure-158ad.appspot.com",
+        messagingSenderId: "137824581618",
+        appId: "1:137824581618:web:8ba8cf244d086054341d6b",
+        measurementId: "G-9EG5ZWYQRP"
+      };
+      firebase.initializeApp(firebaseConfig)
+      // Initialize Firebase
+    </script>
+    <script src="signin.js"></script>
+  </body>
+</html>
